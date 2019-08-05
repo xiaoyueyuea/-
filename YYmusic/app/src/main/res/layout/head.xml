@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#BFEFFF"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/img_person"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@mipmap/person"
+        android:layout_marginTop="48dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/txt_person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保鲜"
+        android:layout_marginTop="16dp"
+        android:textSize="32sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/txt_poem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="嘻嘻嘻嘻嘻嘻嘻嘻嘻"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

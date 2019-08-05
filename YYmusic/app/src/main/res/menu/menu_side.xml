@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="工具">
+        <menu>
+            <item android:title="定时停止播放"
+                android:id="@+id/clockToStop"
+                android:checkable="true"
+                android:icon="@drawable/clock"/>
+            <item android:title="图片墙"
+                android:id="@+id/picture_wall"
+                android:checkable="true"
+                android:icon="@drawable/picture_wall"/>
+        </menu>
+    </item>
+
+    <item android:title="外观定制">
+        <menu>
+            <item android:id="@+id/style"
+                android:title="界面风格"
+                android:checkable="true"
+                android:icon="@drawable/style"/>
+            <item android:id="@+id/color"
+                android:title="主题色定制"
+                android:checkable="true"
+                android:icon="@drawable/cloth"/>
+            <item android:id="@+id/night"
+                android:title="夜间模式"
+                android:checkable="true"
+                android:icon="@drawable/night"/>
+        </menu>
+    </item>
+
+    <item android:title="关于应用">
+        <menu>
+            <item android:id="@+id/guide"
+                android:title="用户指南"
+                android:checkable="true"
+                android:icon="@drawable/guide"/>
+            <item android:id="@+id/set"
+                android:title="设置"
+                android:checkable="true"
+                android:icon="@drawable/set"/>
+            <item android:id="@+id/off"
+                android:title="退出"
+                android:checkable="true"
+                android:icon="@drawable/off"/>
+        </menu>
+    </item>
+</menu>

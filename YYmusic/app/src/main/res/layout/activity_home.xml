@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD700"
+    tools:context=".ui.HomeActivity"
+    android:id="@+id/home_na">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:id="@+id/constraintLayout_first"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <androidx.appcompat.widget.Toolbar
+               android:id="@+id/toolbar_home"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               android:background="#BFEFFF"
+               android:fitsSystemWindows="true">
+
+
+               <LinearLayout
+                   android:id="@+id/linearLayout_toolbar"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <ImageButton
+                       android:id="@+id/btn_home_menu"
+                       android:layout_width="32dp"
+                       android:layout_height="32dp"
+                       android:layout_gravity="center"
+                       android:background="#00000000"
+                       android:scaleType="fitXY"
+                       android:src="@mipmap/menu_home"
+                       android:onClick="onclick"/>
+
+                   <TextView
+                       android:id="@+id/txt_home_title"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="35dp"
+                       android:layout_weight="1"
+                       android:text="我的音乐"
+                       android:textSize="35dp" />
+
+                   <ImageButton
+                       android:id="@+id/btn_home_reserach"
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:layout_gravity="center"
+                       android:background="#00000000"
+                       android:scaleType="fitXY"
+                       android:src="@mipmap/research_home" />
+               </LinearLayout>
+           </androidx.appcompat.widget.Toolbar>
+
+           <LinearLayout
+               android:id="@+id/linearLayout_second"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               app:layout_constraintTop_toBottomOf="@+id/toolbar_home">
+
+               <TextView
+                   android:id="@+id/txt_mostPlay"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="    历史最多播放"
+                   app:layout_constraintTop_toBottomOf="@+id/toolbar_home" />
+
+               <ImageView
+                   android:id="@+id/img_mostPlay"
+                   android:layout_width="380dp"
+                   android:layout_height="140dp"
+                   android:layout_gravity="center"
+                   android:scaleType="fitXY"
+                   android:src="@mipmap/mostplaypicture" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/linearLayout_third"
+               android:layout_width="match_parent"
+               android:layout_height="30dp"
+               android:orientation="horizontal"
+               app:layout_constraintTop_toBottomOf="@+id/linearLayout_second">
+
+               <TextView
+                   android:id="@+id/text_playNum"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="     播放"
+                   android:textSize="18dp" />
+
+               <TextView
+                   android:id="@+id/times_play"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="yyy"
+                   android:textColor="#FF0000"
+                   android:textSize="18dp" />
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="次"
+                   android:textSize="18dp" />
+
+               <Button
+                   android:id="@+id/btn_see_more"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="#00000000"
+                   android:text="查看更多"
+                   android:onClick="onclick"/>
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/linearLayout_fouth"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toBottomOf="@+id/linearLayout_third">
+
+               <ImageButton
+                   android:id="@+id/btn_allMusic"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="#00000000"
+                   android:src="@mipmap/allmusic"
+                   android:onClick="onclick"/>
+
+               <ImageButton
+                   android:id="@+id/btn_recentPlay"
+                   android:layout_width="0dp"
+                   android:layout_height="81dp"
+                   android:layout_weight="1"
+                   android:background="#00000000"
+                   android:src="@mipmap/recentplay"
+                   android:onClick="onclick"/>
+
+               <ImageButton
+                   android:id="@+id/btn_myCollect"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="#00000000"
+                   android:src="@mipmap/allmusic"
+                   android:onClick="onclick"/>
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/linearLayout_five"
+               android:layout_width="match_parent"
+               android:layout_height="35dp"
+               android:orientation="horizontal"
+               app:layout_constraintTop_toBottomOf="@id/linearLayout_fouth">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="       全部歌曲"
+                   android:textSize="18dp" />
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="       最近播放"
+                   android:textSize="18dp" />
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="        我的收藏"
+                   android:textSize="18dp" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/linearLayout_six"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               app:layout_constraintTop_toBottomOf="@id/linearLayout_five">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="创建的歌单"
+                   android:textSize="16dp" />
+
+               <Button
+                   android:id="@+id/btn_newList"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="#00000000"
+                   android:text="新建>"
+                   android:textSize="18dp"
+                   android:onClick="onclick"/>
+           </LinearLayout>
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/constraintLayout_first">
+
+           <ListView
+               android:id="@+id/newMusicList"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_above="@+id/seekBar_home">
+           </ListView>
+
+           <SeekBar
+               android:id="@+id/seekBar_home"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_above="@+id/relativeLayout"/>
+
+           <RelativeLayout
+               android:id="@+id/relativeLayout"
+               android:layout_width="match_parent"
+               android:layout_height="70dp"
+               android:layout_alignParentBottom="true">
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="#FFD700"
+                   android:layout_above="@+id/btn_clickImage"
+                   />
+
+               <ImageButton
+                   android:id="@+id/btn_clickImage"
+                   android:layout_width="70dp"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitXY"
+                   android:background="#00000000"
+                   android:src="@mipmap/test"/>
+
+               <TextView
+                   android:id="@+id/txt_home_musicTitle"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toEndOf="@+id/btn_clickImage"
+                   android:textSize="18dp"
+                   android:text="老街"/>
+
+               <TextView
+                   android:id="@+id/txt_home_musicSinger"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/txt_home_musicTitle"
+                   android:layout_marginStart="100dp"
+                   android:layout_marginTop="9dp"
+                   android:text="李荣浩"/>
+
+               <ImageButton
+                   android:id="@+id/btn_home_play"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="170dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_toEndOf="@+id/btn_clickImage"
+                   android:background="#00000000"
+                   android:src="@mipmap/playbutton" />
+
+               <ImageButton
+                   android:id="@+id/btn_home_list"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="30dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_toEndOf="@+id/btn_home_play"
+                   android:background="#00000000"
+                   android:src="@mipmap/list_home" />
+           </RelativeLayout>
+       </RelativeLayout>
+
+   </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/menu_side"
+        app:headerLayout="@layout/head" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+

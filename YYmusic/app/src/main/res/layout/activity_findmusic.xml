@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_findMusic"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btn_findMusic_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/backbutton"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:background="#00000000"/>
+        
+        <EditText
+            android:id="@+id/txt_findMusic"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="搜索音乐"
+            android:background="@null"
+            android:maxLines="1"
+            android:layout_marginLeft="25dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#8B8B83"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/btn_findMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="从全部歌曲中检索"
+        android:background="#B22222"
+        android:layout_marginTop="450dp"/>
+
+</LinearLayout>

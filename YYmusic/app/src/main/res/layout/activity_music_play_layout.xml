@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#545454">
+    
+    <TextView
+        android:id="@+id/txt_playLayout_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#B8860B"/>
+
+    <TextView
+        android:id="@+id/txt_playLayout_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textColor="#B8860B"/>
+
+    <com.yl.yymusic.util.CircleRotateView
+        android:id="@+id/img_playLayout"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"/>
+
+    <SeekBar
+        android:id="@+id/seekBar_playLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/playLayout_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btn_up"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:background="#00000000"
+            android:src="@mipmap/button_up" />
+
+        <ImageButton
+            android:id="@+id/btn_play"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/btn_up"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@mipmap/pausebutton" />
+        
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/button_next"
+            android:layout_toRightOf="@+id/btn_play"
+            android:layout_marginTop="30dp"
+            android:background="#00000000"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/playLayout_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:descendantFocusability="blocksDescendants">
+
+        <ImageView
+            android:id="@+id/btn_style_recycle"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/list_recycle"
+            android:background="#00000000"
+            android:layout_marginStart="28dp"/>
+
+        <ImageView
+            android:id="@+id/btn_current_list"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@mipmap/list"
+            android:scaleType="fitXY"
+            android:background="#00000000"
+            android:layout_marginLeft="65dp"/>
+
+        <ImageView
+            android:id="@+id/btn_collect"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/collect_no"
+            android:background="#00000000"
+            android:layout_marginLeft="65dp"/>
+
+        <ImageView
+            android:id="@+id/btn_option"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="65dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@mipmap/option_music"/>
+    </LinearLayout>
+
+</LinearLayout>
